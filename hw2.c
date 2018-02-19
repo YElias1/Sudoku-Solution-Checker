@@ -72,7 +72,7 @@ void gridInput(FILE *finput)
 		{
 			c = fgetc(finput);
 			if (!isspace(c) && c != EOF) {
-				i = c - '0';
+				i = c - '0';	//	This line is used to convert string number to it's corresponding int
 				grid[row][col] = i;
 				col++;		//	Only goes to the next column if an addition to grid[][] was made
 			}
